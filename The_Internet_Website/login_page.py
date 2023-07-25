@@ -14,6 +14,7 @@ class Login(unittest.TestCase):
         self.chrome.get('https://the-internet.herokuapp.com/')
         self.chrome.find_element(By.LINK_TEXT, 'Form Authentication').click()
 
+
     def tearDown(self):
         self.chrome.quit()
 
